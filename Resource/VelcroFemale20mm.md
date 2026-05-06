@@ -1,0 +1,6 @@
+[tacticaltrim]: https://www.tacticaltrim.de/Klettband-Flausch
+
+| **Velcro Female** (20mm) | [Tacticaltrim][tacticaltrim] | | | |
+| :- | :- | :- | :- | :- |
+| <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48656/lg/velcro-flausch-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Tan-499-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48684/lg/velcro-flausch-tan-499-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-20-mm-Coyote-Brown"><img src="https://www.tacticaltrim.de/media/image/product/48432/lg/velcro-flausch-20-mm-coyote-brown.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Schwarz-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48628/lg/velcro-flausch-schwarz-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Weiss-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48712/lg/velcro-flausch-weiss-20mm-meterware.webp" width="256"></a> |
+| Ral 7013 | Tan 499 | Coyote | Black | White

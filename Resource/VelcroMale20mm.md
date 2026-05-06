@@ -1,0 +1,6 @@
+[tacticaltrim]: https://www.tacticaltrim.de/Klettband-Haken
+
+| **Velcro Male** (20mm) | [Tacticaltrim][tacticaltrim] | | | |
+| :- | :- | :- | :- | :- |
+| <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49024/lg/velcro-haken-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Tan-499-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49052/lg/velcro-haken-tan-499-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Coyote-Brown-498-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48800/lg/velcro-haken-coyote-brown-498-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Schwarz-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48996/lg/velcro-haken-schwarz-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Weiss-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49080/lg/velcro-haken-weiss-20mm-meterware.webp" width="256"></a> |
+| Ral 7013 | Tan 499 | Coyote | Black | White

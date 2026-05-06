@@ -1,4 +1,6 @@
-| **Velcro Male** (25mm) | | | | | |
+[tacticaltrim]: https://www.tacticaltrim.de/Klettband-Haken
+
+| **Velcro Male** (25mm) | [Tacticaltrim][tacticaltrim] | | | | |
 | :- | :- | :- | :- | :- | :- |
 | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49028/lg/velcro-haken-ral7013-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Tan-499-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49056/lg/velcro-haken-tan-499-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Coyote-Brown-498-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48804/lg/velcro-haken-coyote-brown-498-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Schwarz-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49000/lg/velcro-haken-schwarz-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-25-mm-Wolf-Grey-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/66355/lg/velcro-haken-25-mm-wolf-grey-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Weiss-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49084/lg/velcro-haken-weiss-25mm-meterware.webp" width="256"></a>
 | Ral 7013 | Tan 499 | Coyote | Black | Gray | White
