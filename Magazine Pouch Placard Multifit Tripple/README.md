@@ -39,21 +39,19 @@ Materials for this Project where sourced from this Shops
 | <a href="https://www.iw-tex.de/produkt/560-dtex-cordura-pu-beschichtet-irr-steingrauoliv-meterware/"><img src="https://www.iw-tex.de/wp-content/uploads/2024/08/Steingrauoliv_Meterware_Welle-720x720.jpg" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49020/lg/velcro-haken-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48652/lg/velcro-flausch-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/Nylon-Gurtband-Ranger-Green-Solution-Dyed-25-mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/67190/lg/nylon-gurtband-ranger-green-solution-dyed-25-mm-meterware~2.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/WB25-Stecker-Click-In-2M-Warrior-Serie-25-mm-RAL7013"><img src="https://www.tacticaltrim.de/media/image/product/64886/lg/wb25-stecker-click-in-2m-warrior-serie-25-mm-ral7013.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49028/lg/velcro-haken-ral7013-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48660/lg/velcro-flausch-ral7013-25mm-meterware.webp" width="256"></a> |
 | Used for the Frontflap | Used for the Backpanel | Used for the Backpanel and Frontpanel Lining | Used for Buckles attachment | Used to attach to Chest Rig | Used to attach to Backpanel, for Frontpanel stability and lining to depart Magazines | Used to attach to Backpanel and Compression
 
-### Template
+### Cutting Templates
 #### Page 1
 <img src="./Page1.svg" border="1"></img>
 #### Page 2
 <img src="./Page2.svg" border="1"></img>
 
-### Calculator
-[Calc][calculator]
-
-<a href='./Calculator.html'>link</a>
-
-### Variations
+### Possible Variations
 &bullet; The Webbing on the Sides may be layouted differently to be used with other Quickrelease Systems (ROC, Tubes...).<br>
 &bullet; The Surface on the Frontpanel may be used for additional Molle Webbing.<br>
 &bullet; The Front- and Backpanel could have Holes or small Webbing to thread Shockcord for Open-Top Magazine retention.<br>
 &bullet; The Velcro on the Insides of the  Front- and Backpanel can host Velcropatches with a rubberized Backface for Open-Top Magazine retention.<br>
 &bullet; The Velcro on the Inside of the Backpanel and additional Velcro on the Frontpanel can host a Lid for Closed-Top Magazine retention.<br> 
 &bullet; The Frontpanels Sides and Bottom Flaps and Seperators can be made of elastic Fabric to increase Magazine retetion.<br>
+
+### Material Cost Calculator
+Download the [Calculator][calculator] html and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.

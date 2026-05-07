@@ -1,5 +1,5 @@
 <!-- References -->
-[ref_magpouchplacardmultifittripple]: ./Magazine%20Pouch%20Placard%20Multifit%20Tripple/README.md]
+[ref_magpouchplacardmultifittripple]: ./Magazine%20Pouch%20Placard%20Multifit%20Tripple/README.md
 [ref_magpouchmultifit]: ./Magazine%20Pouch%20Multifit/README.md
 
 # DIY - Custom Tactical Equipment
