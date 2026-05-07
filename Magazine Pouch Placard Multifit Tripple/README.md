@@ -18,6 +18,8 @@
 [velcrofemale25mm]: ./../Resource//VelcroFemale25mm.md
 [webbing25mm]: ./../Resource/Webbing25mm.md
 [buckles]: ./../Resource/Buckles25mm.md
+<!-- References: Calculator -->
+[calculator]: ./Calculator.html
 
 [Home][home] &bullet; [Magazine Pouch - Placard - Multifit Tripple - High Cut][self]
 
@@ -42,6 +44,11 @@ Materials for this Project where sourced from this Shops
 <img src="./Page1.svg" border="1"></img>
 #### Page 2
 <img src="./Page2.svg" border="1"></img>
+
+### Calculator
+[Calc][calculator]
+
+<a href='./Calculator.html'>link</a>
 
 ### Variations
 &bullet; The Webbing on the Sides may be layouted differently to be used with other Quickrelease Systems (ROC, Tubes...).<br>

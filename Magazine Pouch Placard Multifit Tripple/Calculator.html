@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" defer>
+            const units = ["mm", "cm"];
+            window.onload = windowOnLoad;
+            // Variables Backpanel
+            let inputPanelHakenKlett;
+            let inputPanelFlauschKlett;
+            let inputPanelGurtband;
+            let inputPanelBucklesLeft;
+            let inputPanelBucklesTop;
+            let inputPanelBucklesRight;
+            let checkboxPanelCover;
+            let checkboxPanelBuckles;
+            let kostenKlettPanel;
+            // Variables Frontpanel
+            let inputFabricWidth;
+            let inputFabricHeight;
+            let inputFabricCost;
+            let inputCostFlapVelcroFemale25mm;
+            let inputCostFlapVelcroMale25mm;
+            let inputCostFlapVelcroFemale150mm;
+            let costVelcroFlap;
+            // Variables Total
+            let totalCost;
+
+            function windowOnLoad()
+            {
+                console.log("windowOnLoad");
+                // Backpanel
+                inputPanelHakenKlett = document.getElementById("panelHakenKlett");
+                inputPanelHakenKlett.addEventListener("change", calculateTotalBackpanel);
+                inputPanelFlauschKlett = document.getElementById("panelFlauschKlett");
+                inputPanelFlauschKlett.addEventListener("change", calculateTotalBackpanel);
+                inputPanelGurtband = document.getElementById("panelGurtband");
+                inputPanelGurtband.addEventListener("change", calculateTotalBackpanel);
+                checkboxPanelBuckles = document.getElementById("checkboxPanelBuckles");
+                checkboxPanelBuckles.addEventListener("change", calculateTotalBackpanel);
+                inputPanelBucklesLeft = document.getElementById("inputPanelBucklesLeft");
+                inputPanelBucklesLeft.addEventListener("change", calculateTotalBackpanel);
+                inputPanelBucklesTop = document.getElementById("inputPanelBucklesTop");
+                inputPanelBucklesTop.addEventListener("change", calculateTotalBackpanel);
+                inputPanelBucklesRight = document.getElementById("inputPanelBucklesRight");
+                inputPanelBucklesRight.addEventListener("change", calculateTotalBackpanel);
+                checkboxPanelCover = document.getElementById("checkboxPanelCover");
+                checkboxPanelCover.addEventListener("change", calculateTotalBackpanel);
+                kostenKlettPanel = document.getElementById("kostenKlettPanel");
+                kostenKlettPanel.textContent = "0";
+                // Frontpanel
+                inputFabricWidth = document.getElementById("fabricWidth");
+                inputFabricWidth.addEventListener("change", calculateTotalFrontpanel);
+                inputFabricHeight = document.getElementById("fabricHeight");
+                inputFabricHeight.addEventListener("change", calculateTotalFrontpanel);
+                inputFabricCost = document.getElementById("fabricCost");
+                inputFabricCost.addEventListener("change", calculateTotalFrontpanel);
+                inputCostFlapVelcroFemale25mm = document.getElementById("inputCostFlapVelcroFemale25mm");
+                inputCostFlapVelcroFemale25mm.addEventListener("change", calculateTotalFrontpanel);
+                inputCostFlapVelcroMale25mm = document.getElementById("inputCostFlapVelcroMale25mm");
+                inputCostFlapVelcroMale25mm.addEventListener("change", calculateTotalFrontpanel);
+                inputCostFlapVelcroFemale150mm = document.getElementById("inputCostFlapVelcroFemale150mm");
+                inputCostFlapVelcroFemale150mm.addEventListener("change", calculateTotalFrontpanel);
+                costVelcroFlap = document.getElementById("costVelcroFlap");
+                costVelcroFlap.textContent = "0"
+                // Total
+                totalCost = document.getElementById("totalCost");
+                
+                this.calculateTotalBackpanel();
+                this.calculateTotalFrontpanel();
+            }
+            function calculateTotalBackpanel(event)
+            {
+                // Debug
+                console.log("calculateTotalBackpanel");
+                // Backpanel Velcro Male (150mm width)
+                let costVelcroMale = costPerLength(
+                    "mm",   // Unit
+                    250,    // Length
+                    inputPanelHakenKlett.value
+                );
+                // Backpanel Velcro Female (150mm width)
+                let costVelcroFemale = costPerLength(
+                    "mm",   // Unit
+                    250,    // Lenght
+                    inputPanelFlauschKlett.value
+                );
+                // Backpanel Webbing (25mm width)
+                let costGurtband = costPerLength(
+                    "mm",   // Unit
+                    300,    // Length 6 x 50mm
+                    inputPanelGurtband.value
+                );
+                // Backpanel Buckles
+                let costPanelBuckles = 0;
+                if (checkboxPanelBuckles.checked)
+                {
+                    costPanelBuckles += 2 * inputPanelBucklesLeft.value;
+                    costPanelBuckles += 2 * inputPanelBucklesTop.value;
+                    costPanelBuckles += 2 * inputPanelBucklesRight.value;
+                }
+                let costPanelCover = 0;
+                // Backpanel Velcro Female Cover (150mm width)
+                if (checkboxPanelCover.checked)
+                {
+                    costPanelCover = costPerLength(
+                        "mm",   // Unit
+                        250,    // Length
+                        inputPanelFlauschKlett.value
+                    );
+                }
+                // Backpanel Total
+                kostenKlettPanel.textContent = (
+                    costVelcroMale + 
+                    costVelcroFemale + 
+                    costGurtband +
+                    costPanelCover +
+                    costPanelBuckles
+                ).toFixed(2);
+                // Total
+                totalCost.textContent = ( 
+                    Number(kostenKlettPanel.textContent) + 
+                    Number(costVelcroFlap.textContent)
+                ).toFixed(2);
+            }
+            function calculateTotalFrontpanel(event)
+            {
+                // Debug
+                console.log("calculateTotalFrontpanel");
+                // Frontpanel Fabric
+                let costPerSquareCentimeter = costPerSquareCM(
+                    inputFabricWidth.value,
+                    inputFabricHeight.value,
+                    inputFabricCost.value
+                );
+                let costFabric =                        //                height*width
+                    15 * 25 * costPerSquareCentimeter + // Fabric Front:  150mm * 250mm
+                    15 * 8 * costPerSquareCentimeter +  // Fabric Left:   150mm * 80mm
+                    15 * 8 * costPerSquareCentimeter +  // Fabric Right:  150mm * 80mm
+                    8 * 25 * costPerSquareCentimeter;   // Fabric Bottom: 80mm  * 250mm
+                // Cost for Female Velcro on Sides and Bottom
+                let costVelcroFemale25mm = costPerLength(
+                    "mm",
+                    4 * 80 + 250, // 4 x Side + 1 x Bottom
+                    inputCostFlapVelcroFemale25mm.value
+                );
+                // Cost for Female Velcro on Bottom
+                let costVelcroMale25mm = costPerLength(
+                    "mm",
+                    250, // 1 x Bottom
+                    inputCostFlapVelcroMale25mm.value
+                );
+                // Cost for Female Velcro on Iniside
+                let costVelcroFemale150mm = costPerLength(
+                    "mm",
+                    250,
+                    inputCostFlapVelcroFemale150mm.value
+                );
+                // Frontpanel Total
+                costVelcroFlap.textContent = (
+                    costFabric +
+                    costVelcroFemale25mm +
+                    costVelcroMale25mm +
+                    costVelcroFemale150mm
+                ).toFixed(2);
+                // Total
+                totalCost.textContent = ( 
+                    Number(kostenKlettPanel.textContent) + 
+                    Number(costVelcroFlap.textContent)
+                ).toFixed(2);
+            }        
+            function costPerSquareCM(widthInCentimeter, heightInCentimeter, cost)
+            {
+                return cost / (widthInCentimeter * heightInCentimeter);
+            }
+            function costPerLength(unit, length, cost)
+            {
+                switch (unit)
+                {
+                    case "mm": return length / 1000 * cost; 
+                }
+                return 0;
+            }
+
+        </script>
+    </head>
+    <body>
+        <b>Backpanel</b><br>
+        <!-- Velcro Male -->
+        <b>Velcro Male (150mm)</b><br>
+        <input id="panelHakenKlett" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <!-- Velcro Female -->
+        <b>Velcro Female (150mm) </b><br>
+        <input id="panelFlauschKlett" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <!-- Webbing -->
+        <b>Webbing (25mm)</b><br>
+        <input id="panelGurtband" type="number" min="0" step="0.01" value="2.59"> €/meter
+        <br>
+        <!-- Buckles -->
+        <label><input id="checkboxPanelBuckles" type="checkbox" checked><b>Buckles</b></label><br>
+        <input id="inputPanelBucklesLeft" type="number" min="0" step="0.01" value="0.69"> €/piece (left)<br><!-- Left -->
+        <input id="inputPanelBucklesTop" type="number" min="0" step="0.01" value="0.69"> €/piece (top)<br><!-- Top -->
+        <input id="inputPanelBucklesRight" type="number" min="0" step="0.01" value="0.69"> €/piece (right)<br><!-- Right -->
+        <!--  -->
+        <label><input id="checkboxPanelCover" type="checkbox" checked><b>Backside Cover</b></label></label><br>
+        <a id="kostenKlettPanel">0</a><a> €</a><br>
+        <br>
+
+        <b>Frontpanel</b><br>
+        <b>Fabric</b><br>
+        <input id="fabricWidth" type="number" min="0" value="150" style="text-align: right"> cm (width)<br>
+        <input id="fabricHeight" type="number" min="0" value="100" style="text-align: right"> cm (height)<br>
+        <input id="fabricCost" type="number" step="0.01" min="0" value="35.00" style="text-align: right"> €/㎡
+        <br>
+        <b>Velcro Female (25mm)</b><br>
+        <input id="inputCostFlapVelcroFemale25mm" type="number" min="0" step="0.01" value="1.28" style="text-align: right"> €/meter<br>
+        <b>Velcro Female (150mm)</b><br>
+        <input id="inputCostFlapVelcroFemale150mm" type="number" min="0" step="0.01" value="5.91" style="text-align: right"> €/meter<br>
+        <b>Velcro Male (25mm)</b><br>
+        <input id="inputCostFlapVelcroMale25mm" type="number" min="0" step="0.01" value="1.28" style="text-align: right"> €/meter<br>
+        <a id="costVelcroFlap">0</a><a> €</a><br>
+        <br>
+
+        <b>Total: </b><a id="totalCost">0</a><a> €</a><br>
+        </div>
+    </body>
+</html>

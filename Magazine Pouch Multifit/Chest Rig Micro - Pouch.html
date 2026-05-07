@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" defer>
+            const units = ["mm", "cm"];
+            window.onload = windowOnLoad;
+
+            let inputPanelHakenKlett;
+            let inputPanelFlauschKlett;
+            let inputPanelGurtband;
+            let inputPanelBuckles;
+            let checkboxPanelCover;
+            let checkboxPanelBuckles;
+            
+            let inputFabricWidth;
+            let inputFabricHeight;
+            let inputFabricCost;
+            let inputCostFlapVelcroFemale25mm;
+            let inputCostFlapVelcroMale25mm;
+            let costVelcroFlap;
+
+            let kostenKlettPanel;
+            function windowOnLoad()
+            {
+                console.log("windowOnLoad");
+                // Variables
+                inputFabricWidth = document.getElementById("fabricWidth");
+                inputFabricHeight = document.getElementById("fabricHeight");
+                inputFabricCost = document.getElementById("fabricCost");
+                inputCostFlapVelcroFemale25mm = document.getElementById("inputCostFlapVelcroFemale25mm");
+                inputCostFlapVelcroMale25mm = document.getElementById("inputCostFlapVelcroMale25mm");
+                costVelcroFlap = document.getElementById("costVelcroFlap");
+
+                // Costs Velcro Panel
+                inputPanelHakenKlett = document.getElementById("panelHakenKlett");
+                inputPanelFlauschKlett = document.getElementById("panelFlauschKlett");
+                inputPanelGurtband = document.getElementById("panelGurtband");
+                checkboxPanelCover = document.getElementById("checkboxPanelCover");
+                checkboxPanelBuckles = document.getElementById("checkboxPanelBuckles");
+                inputPanelBuckles = document.getElementById("inputPanelBuckles");
+
+                inputPanelHakenKlett.addEventListener("change", onValueChanged);
+                inputPanelFlauschKlett.addEventListener("change", onValueChanged);
+                inputPanelGurtband.addEventListener("change", onValueChanged);
+                checkboxPanelBuckles.addEventListener("change", onValueChanged);
+                checkboxPanelCover.addEventListener("change", onValueChanged);
+
+                kostenKlettPanel = document.getElementById("kostenKlettPanel");
+                this.onValueChanged();
+                
+
+
+
+                inputFabricWidth.addEventListener("change", onValueChanged);
+                inputFabricHeight.addEventListener("change", onValueChanged);
+
+                this.calculateCostFrontFlap();
+            }
+            function onValueChanged(event)
+            {
+                let costVelcroMale = costPerLength(
+                    "mm",
+                    250,
+                    inputPanelHakenKlett.value
+                );
+                let costVelcroFemale = costPerLength(
+                    "mm",
+                    250,
+                    inputPanelFlauschKlett.value
+                );
+                let costGurtband = costPerLength(
+                    "mm",
+                    300,
+                    inputPanelGurtband.value
+                );
+                let costPanelBuckles = 0;
+                if (checkboxPanelBuckles.checked)
+                {
+                    costPanelBuckles = 6 * inputPanelBuckles.value;
+                }
+                let costPanelCover = 0;
+                if (checkboxPanelCover.checked)
+                {
+                    costPanelCover = costPerLength(
+                        "mm",
+                        250,
+                        inputPanelFlauschKlett.value
+                    );
+                }
+                kostenKlettPanel.textContent = 
+                    costVelcroMale + 
+                    costVelcroFemale + 
+                    costGurtband +
+                    costPanelCover +
+                    costPanelBuckles;
+            }
+
+            function costPerLength(unit, length, cost)
+            {
+                switch (unit)
+                {
+                    case "mm": return length / 1000 * cost; 
+                }
+                return 0;
+            }
+            function costPerSquareCM(widthInCentimeter, heightInCentimeter, cost)
+            {
+                return cost / (widthInCentimeter * heightInCentimeter);
+            }
+
+            function calculateCostFrontFlap()
+            {
+                let costPerSquareCentimeter = this.costPerSquareCM(
+                    inputFabricWidth.value,
+                    inputFabricHeight.value,
+                    inputFabricCost.value
+                );
+                let costFabric =                        //                height*width
+                    15 * 25 * costPerSquareCentimeter + // Fabric Front:  150mm * 250mm
+                    15 * 8 * costPerSquareCentimeter +  // Fabric Left:   150mm * 80mm
+                    15 * 8 * costPerSquareCentimeter +  // Fabric Right:  150mm * 80mm
+                    8 * 25 * costPerSquareCentimeter;   // Fabric Bottom: 80mm  * 250mm
+
+                // Cost for Female Velcro on Sides and Bottom
+                let costVelcroFemale25mm = this.costPerLength(
+                    "mm",
+                    4 * 80 + 250, // 4 x Side + 1 x Bottom
+                    inputCostFlapVelcroFemale25mm.value
+                );
+                // Cost for Female Velcro on Bottom
+                let costVelcroMale25mm = this.costPerLength(
+                    "mm",
+                    250, // 1 x Bottom
+                    inputCostFlapVelcroMale25mm.value
+                );
+                // Cost for Female Velcro on Inisides
+                let costVelcroFemale150mm = this.costPerLength(
+                    "mm",
+                    2 * 250, // 2 x Insides
+                    inputCostFlapVelcroMale25mm.value
+                );
+
+                // Todo: Seperators
+
+                costVelcroFlap.textContent =
+                    costFabric +
+                    costVelcroFemale25mm +
+                    costVelcroMale25mm +
+                    costVelcroFemale150mm;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+        <h3>DIY Gear - Multicaliber Placard Hight Cut</h2>
+
+        <b>Verzeichnis</b>
+        <ol>
+            <li>Beschreibung</li>
+            <li>Material</li>
+            <li>Verarbeitung</li>
+            <li>Kosten</li>
+            <li>Bezugsquellen</li>
+        </ol>
+
+        <h3>1. Beschreibung</h3>
+        Do it yourself (DIY) Placard mit verstellbarer Multikaliber Frontflap Pouch als Placard für Plattenträger mit Buckle-Up System und Micro Chest Rigs.
+        <br>
+        Der Placard besteht aus:
+        <ul>
+            <li><b>Klett Panel</b></li>
+            Das Klett Panel ist das tragende Element des Placards und besteht aus einer Haken-Klettfläche auf der Rückseite, welche auf den Plattenträger geklettet wird, bzw. für Chest-Rigs mit einer Flausch-Klettfläche abgedegt wird. Die Vorderseite besteht aus einer Flausch-Klettfläche an der das Frontflap befestigt wird. Zwischen Vorder- und Rückseite werden ~5cm lange 25mm Bänder eingenäht, an denen die Buckles befestigt werden.
+            <li><b>Frontflap</b></li>
+            Das Frontflap besteht aus 4 mit Klettstreifen vernähten Cordura Flächen, eine Hauptfläche, zwei seitlichen und einem unteren Flügel welche am Klett-Panel angeklettet werden. 
+        </ul>    
+
+        <h3>2. Material</h3>
+        <b>2.1 Klett-Panel</b><br>
+        <b>2.1.1 Haken-Klett (Rückseite)</b><br>
+        - Breite 150mm x Länge 250mm
+        <br>
+        <b>2.1.2 Flausch-Klett (Vorderseite)</b><br>
+        - Breite 150mm x Länge 250mm
+        <br>
+        <b>2.1.3 Gurtband (Buckles)</b><br>
+        - 6x Breite 25mm x Länge 50mm
+        <br>
+        <br>
+        <b>2.2 Front-Flap</b><br>
+        <b>2.2.1 Cordura Stoff Fläche (Vorderseite)</b><br>
+        - Breite 250mm x Höhe 150mm<br>
+        <b>2.2.2 Flausch-Klett (Vorderseite Innen)</b><br>
+        - Breite 250mm x Höhe 150mm<br>
+        <b>2.2.3 Cordura Stoff Fläche (Seiten)</b><br>
+        - 2x Breite 80mm x Höhe 150mm<br>
+        <b>2.2.4 Haken-Klett Streifen (Seiten)</b><br>
+        - 2x Breite 25mm x Höhe 150mm<br>
+        <b>2.2.5 Flausch-Klett Streifen (Seiten)</b><br>
+        - 4x Breite 25mm x Länge 80mm<br>
+        <b>2.2.6 Cordura Stoff Fläche (Unterseite)</b><br>
+        - Breite 250mm x Höhe 80mm<br>
+        <b>2.2.7 Haken-Klett Streifen (Unterseite)</b><br>
+        - Breite 25mm x Länge 250mm<br>
+        <b>2.2.8 Flausch-Klett Streifen (Unterseite)</b><br>
+        - Breite 25mm x Länge 250mm<br>
+
+        2.3 Sonstiges
+        2.3.1 Nähgarn
+        2.3.2 Buckles
+
+        <h3>3. Montage</h3>
+
+        <h3>4. Materialkosten</h3>
+
+        <b>4.1 Klett-Panel</b>
+        <b>Haken-Klett (Breite 150mm)</b><br>
+        Preis: <input id="panelHakenKlett" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <b>Flausch-Klett (Breite 150mm) </b><br>
+        Preis: <input id="panelFlauschKlett" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <b>Gurtband (Breite 25mm)</b><br>
+        Preis: <input id="panelGurtband" type="number" min="0" step="0.01" value="2.59"> €/meter
+        <br>
+        <label><input id="checkboxPanelBuckles" type="checkbox"><b>Schnallen Stecker</b></label><br>
+        Preis: <input id="inputPanelBuckles" type="number" min="0" step="0.01" value="0.69"> €/Stück<br>
+        <label><input id="checkboxPanelCover" type="checkbox"><b>Abdeckung Rückseite</b></label></label><br>
+        <b>Gesamt: </b><a id="kostenKlettPanel"></a><a> €</a><br>
+        <br>
+
+        <b>4.2 Front-Flap</b><br>
+        <b>Stoff</b><br>
+        Breite: <input id="fabricWidth" type="number" min="0" value="150" style="text-align: right"> cm<br>
+        Höhe:   <input id="fabricHeight" type="number" min="0" value="100" style="text-align: right"> cm<br>
+        Preis:  <input id="fabricCost" type="number" step="0.01" min="0" value="35.00" style="text-align: right"> €
+        <br>
+        <b>Flausch-Klett (Breite 25mm)</b><br>
+        Preis: <input id="inputCostFlapVelcroFemale25mm" type="number" min="0" step="0.01" value="1.28" style="text-align: right"> €/meter
+        <br>
+        <b>Flausch-Klett (Breite 150mm)</b><br>
+        Preis: <input id="inputCostFlapVelcroFemale150mm" type="number" min="0" step="0.01" value="5.91" style="text-align: right"> €/meter
+        <br>
+        <b>Haken-Klett (Breite 25mm)</b><br>
+        Preis: <input id="inputCostFlapVelcroMale25mm" type="number" min="0" step="0.01" value="1.28" style="text-align: right"> €/meter
+        <br>        
+        <b>Gesamt: </b><a id="costVelcroFlap"></a><a> €</a><br>
+        <br>
+
+        <h3>5. Bezugsquellen</h3>
+        <a href="https://www.iw-tex.de/" style="text-decoration: none"><b>IW-Tex</b></a><br>
+        <a href="https://www.tacticaltrim.de/" style="text-decoration: none"><b>Tactical Trimm</b></a><br>
+
+        </div>
+    </body>
+</html>
