@@ -81,10 +81,13 @@ Materials for this Project where sourced from this Shops<br>
 <a href="https://www.iw-tex.de/">IW-Tex</a> (https://www.iw-tex.de/)<br>
 <a href="https://www.tacticaltrim.de/">Tacticaltrim</a> (https://www.tacticaltrim.de/)<br>
 
+---
 | [Fabric][fabric] | [Velcro Male 150mm][velcromale150mm] | [Velcro Female 150mm][velcrofemale150mm] | [Webbing 25mm][webbing25mm] | [Buckles][buckles] | [Velcro Male 25mm][velcromale25mm] | [Velcro Female 25mm][velcrofemale25mm]
 | :- | :- | :- | :- | :- | :- | :- |
 | <a href="https://www.iw-tex.de/produkt/560-dtex-cordura-pu-beschichtet-irr-steingrauoliv-meterware/"><img src="https://www.iw-tex.de/wp-content/uploads/2024/08/Steingrauoliv_Meterware_Welle-720x720.jpg" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49020/lg/velcro-haken-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48652/lg/velcro-flausch-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/Nylon-Gurtband-Ranger-Green-Solution-Dyed-25-mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/67190/lg/nylon-gurtband-ranger-green-solution-dyed-25-mm-meterware~2.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/WB25-Stecker-Click-In-2M-Warrior-Serie-25-mm-RAL7013"><img src="https://www.tacticaltrim.de/media/image/product/64886/lg/wb25-stecker-click-in-2m-warrior-serie-25-mm-ral7013.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49028/lg/velcro-haken-ral7013-25mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-25mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48660/lg/velcro-flausch-ral7013-25mm-meterware.webp" width="256"></a> |
 | Used for the Frontflap | Used for the Backpanel | Used for the Backpanel and Frontpanel Lining | Used for Buckles attachment | Used to attach to Chest Rig | Used to attach to Backpanel, for Frontpanel stability and lining to depart Magazines | Used to attach to Backpanel and Compression
+---
+*Sewing Thread is not listed
 
 <!-- Templates -->
 <h3>

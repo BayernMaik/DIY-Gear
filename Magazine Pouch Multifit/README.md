@@ -15,7 +15,6 @@
 <!-- References: Calculator -->
 [calculator]: ./Calculator.html
 
-
 <!-- Navigation -->
 <a id="id_navigation" style="color: #dddddd; text-decoration:none">Navigation</a><br>
 [Home][home] &bullet; [Pouch][category_pouch] &bullet; [Magazine][category_magazine] &bullet; [Single (High Cut)][self]
@@ -62,14 +61,14 @@ Materials for this Project where sourced from this Shops<br>
 <a href="https://www.iw-tex.de/">IW-Tex</a> (https://www.iw-tex.de/)<br>
 <a href="https://www.tacticaltrim.de/">Tacticaltrim</a> (https://www.tacticaltrim.de/)<br>
 
-| [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] |
-| :- | :- |
-| <a href="https://www.iw-tex.de/produkt/molle-pals-befestigung-mit-steg-5-x-2-steingrauoliv-gen-2/"><img src="https://www.iw-tex.de/wp-content/uploads/2025/10/MOLLE-PALS-Befestigung_zum_aufnaehen_Micromolle_5x2_Steingrauoliv-720x720.jpg" width="256"></a> | <a href="https://www.iw-tex.de/produkt/560-dtex-cordura-pu-beschichtet-irr-steingrauoliv-meterware/"><img src="https://www.iw-tex.de/wp-content/uploads/2024/08/Steingrauoliv_Meterware_Welle-720x720.jpg" width="256"></a> |
-| Used for the Backpanel | Used for the Frontpanel |
+---
+| [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] | Velcro Female(150mm) | Velcro Male(20mm) | Velcro Female(20mm)
+| :- | :- | :- | :- | :-  
+| <a href="https://www.iw-tex.de/produkt/molle-pals-befestigung-mit-steg-5-x-2-steingrauoliv-gen-2/"><img src="https://www.iw-tex.de/wp-content/uploads/2025/10/MOLLE-PALS-Befestigung_zum_aufnaehen_Micromolle_5x2_Steingrauoliv-720x720.jpg" width="256"></a> | <a href="https://www.iw-tex.de/produkt/560-dtex-cordura-pu-beschichtet-irr-steingrauoliv-meterware/"><img src="https://www.iw-tex.de/wp-content/uploads/2024/08/Steingrauoliv_Meterware_Welle-720x720.jpg" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48652/lg/velcro-flausch-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49024/lg/velcro-haken-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48656/lg/velcro-flausch-ral7013-20mm-meterware.webp" width="256"></a>
+| Used for the Backpanel | Used for the Frontpanel | Used for the Backpanel and Frontpanel Lining | Used on Back and Frontpanel to attach Frontpanel | Used on Frontpanel for attachment and size adjustment
+---
+*Sewing Thread is not listed
 
-### Velcro Female (20mm)
-| [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] |
-| :- | :- |
 
 <!-- Templates -->
 <h3>
@@ -77,12 +76,12 @@ Materials for this Project where sourced from this Shops<br>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
 <details open>
-<summary>Page 1</summary>
+<summary>Page 1 (Din-A4 Portrait)</summary>
 <img src="./Page1.svg" border="1"></img>
 </details>
 </summary>
 <details open>
-<summary>Page 2</summary>
+<summary>Page 2 (Din-A4 Portrait)</summary>
 <img src="./Page2.svg" border="1"></img>
 </details>
 
@@ -91,7 +90,8 @@ Materials for this Project where sourced from this Shops<br>
 <a id="id_variations" style="color: #dddddd; text-decoration: none;">Possible Variations</a>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
-- For the Front Panels Sides and Bottom Flaps elastic fabric could be used to achieve more retention.
+- For the Front Panels Sides and Bottom Flaps elastic fabric could be used to achieve more retention.<br>
+- Separator to use for SMG-Magazines
 
 <!-- Calculator -->
 <h3>
