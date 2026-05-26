@@ -7,6 +7,15 @@
 [iwtexmolle]: https://www.iw-tex.de/produkt/molle-pals-befestigung-mit-steg-5-x-2-steingrauoliv-gen-2/
 [iwtexcordura]: https://www.iw-tex.de/produkt/560-dtex-cordura-pu-beschichtet-irr-steingrauoliv-meterware/
 
+<!-- References: Repository -->
+[home]: ./../README.md
+[category_pouch]: ./../README.md
+[category_magazine]: ./../README.md
+[self]: ./README.md
+
+<!-- Navigation -->
+[Home][home] &bullet; [Pouch][category_pouch] &bullet; [Magazine][category_magazine] &bullet; [High Cut][self]
+
 # Magazine Pouch Multifit (High)
 
 [iwtex]: https://www.iw-tex.de/
