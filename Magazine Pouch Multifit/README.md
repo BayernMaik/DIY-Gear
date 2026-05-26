@@ -1,5 +1,5 @@
 <!-- References -->
-[iwtex]: https://www.iw-tex.de/shop/
+[iwtex]: https://www.iw-tex.de/
 [tacticaltrim]: https://www.tacticaltrim.de/
 [aktivstoffe]: https://www.aktivstoffe.de/
 [extremtextil]: https://www.extremtextil.de/stoffe?p=26&limit=12
@@ -12,19 +12,54 @@
 [category_pouch]: ./../README.md
 [category_magazine]: ./../README.md
 [self]: ./README.md
+<!-- References: Calculator -->
+[calculator]: ./Calculator.html
+
 
 <!-- Navigation -->
-[Home][home] &bullet; [Pouch][category_pouch] &bullet; [Magazine][category_magazine] &bullet; [High Cut][self]
+<a id="id_navigation" style="color: #dddddd; text-decoration:none">Navigation</a><br>
+[Home][home] &bullet; [Pouch][category_pouch] &bullet; [Magazine][category_magazine] &bullet; [Single (High Cut)][self]
 
-# Magazine Pouch Multifit (High)
+<!-- Directory -->
+<details id="id_directory" open>
+<summary>Directory</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet;
+<a href="#id_description" style="color: #dddddd; text-decoration: none"> Description</a>
+<a href="#id_description" style="color: #dddddd; text-decoration: none">&#x21B4;</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet;
+<a href="#id_resources" style="color: #dddddd; text-decoration: none"> Resources</a>
+<a href="#id_resources" style="color: #dddddd; text-decoration: none">&#x21B4;</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet;
+<a href="#id_templates" style="color: #dddddd; text-decoration: none"> Templates</a>
+<a href="#id_templates" style="color: #dddddd; text-decoration: none">&#x21B4;</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet;
+<a href="#id_variations" style="color: #dddddd; text-decoration: none"> Variations</a>
+<a href="#id_variations" style="color: #dddddd; text-decoration: none">&#x21B4;</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet;
+<a href="#id_calculator" style="color: #dddddd; text-decoration: none"> Calculator</a>
+<a href="#id_calculator" style="color: #dddddd; text-decoration: none">&#x21B4;</a>
+<br>
+</details>
 
-[iwtex]: https://www.iw-tex.de/
-[tacticaltrim]: https://www.tacticaltrim.de/
-## Resources
-Materials for this Project where sourced from this Shops
+<!-- Description -->
+<h2>
+<a id="id_description"></a>Magazine Pouch Multifit (High Cut)</a>
+<a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
+</h2>
+<img src="./Preview1.png" border="1"></img><br>
+
+<!-- Resources -->
+<h3>
+<a id="id_resources" style="color: #dddddd; text-decoration: none">Resources</a>
+<a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
+</h3>
+Materials for this Project where sourced from this Shops<br>
 [IW-Tex][iwtex] (https://www.iw-tex.de/)<br>
 [Tacticaltrim][tacticaltrim] (https://www.tacticaltrim.de/)<br>
-
 
 | [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] |
 | :- | :- |
@@ -35,37 +70,31 @@ Materials for this Project where sourced from this Shops
 | [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] |
 | :- | :- |
 
-## Template
-#### Page 1
+<!-- Templates -->
+<h3>
+<a id="id_templates" style="color: #dddddd; text-decoration: none">Cutting Templates</a>
+<a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
+</h3>
+<details open>
+<summary>Page 1</summary>
 <img src="./Page1.svg" border="1"></img>
-#### Page 2
+</details>
+</summary>
+<details open>
+<summary>Page 2</summary>
 <img src="./Page2.svg" border="1"></img>
+</details>
 
-## Variant:
+<!-- Variations -->
+<h3>
+<a id="id_variations" style="color: #dddddd; text-decoration: none;">Possible Variations</a>
+<a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
+</h3>
 - For the Front Panels Sides and Bottom Flaps elastic fabric could be used to achieve more retention.
-- 
 
-
-
-
-
-
-
-## Resources
-[IW-Tex][iwtex] (https://www.iw-tex.de/)<br>
-[Tacticaltrim][tacticaltrim] (https://www.tacticaltrim.de/)<br>
-[Aktivstoffe][aktivstoffe] (https://www.aktivstoffe.de/)<br>
-[Extremtextil][extremtextil] (https://www.extremtextil.de/stoffe?p=26&limit=12)
-
-
-
-| **Velcro Female** (20mm) | | | | |
-| :- | :- | :- | :- | :- |
-| <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48656/lg/velcro-flausch-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Tan-499-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48684/lg/velcro-flausch-tan-499-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-20-mm-Coyote-Brown"><img src="https://www.tacticaltrim.de/media/image/product/48432/lg/velcro-flausch-20-mm-coyote-brown.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Schwarz-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48628/lg/velcro-flausch-schwarz-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-Weiss-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48712/lg/velcro-flausch-weiss-20mm-meterware.webp" width="256"></a> |
-| Ral 7013 | Tan 499 | Coyote | Black | White
-
-| **Velcro Male** (20mm) | | | | |
-| :- | :- | :- | :- | :- |
-| <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49024/lg/velcro-haken-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Tan-499-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49052/lg/velcro-haken-tan-499-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Coyote-Brown-498-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48800/lg/velcro-haken-coyote-brown-498-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Schwarz-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48996/lg/velcro-haken-schwarz-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-Weiss-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49080/lg/velcro-haken-weiss-20mm-meterware.webp" width="256"></a> |
-| Ral 7013 | Tan 499 | Coyote | Black | White
-
+<!-- Calculator -->
+<h3>
+<a id="id_calculator" style="color: #dddddd; text-decoration: none;">Material Cost Calculator</a>
+<a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
+</h3>
+Download the [Calculator][calculator] html and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.
