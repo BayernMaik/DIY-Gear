@@ -22,7 +22,7 @@
 [webbing25mm]: ./../Resource/Webbing25mm.md
 [buckles]: ./../Resource/Buckles25mm.md
 <!-- References: Calculator -->
-[calculator]: ./Calculator.html
+[calculator]: ./calculator.html
 <!-- Anchors -->
 [id_navigation]: #id_navigation
 [id_directory]: #id_directory
@@ -77,8 +77,8 @@ The Frontpanel is made of Fabric with additional Velcro to attach it on the Back
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
 </h3>
 Materials for this Project where sourced from this Shops<br>
-[IW-Tex][iwtex] (https://www.iw-tex.de/)<br>
-[Tacticaltrim][tacticaltrim] (https://www.tacticaltrim.de/)<br>
+<a href="https://www.iw-tex.de/">IW-Tex</a> (https://www.iw-tex.de/)<br>
+<a href="https://www.tacticaltrim.de/">Tacticaltrim</a> (https://www.tacticaltrim.de/)<br>
 
 | [Fabric][fabric] | [Velcro Male 150mm][velcromale150mm] | [Velcro Female 150mm][velcrofemale150mm] | [Webbing 25mm][webbing25mm] | [Buckles][buckles] | [Velcro Male 25mm][velcromale25mm] | [Velcro Female 25mm][velcrofemale25mm]
 | :- | :- | :- | :- | :- | :- | :- |
@@ -117,4 +117,5 @@ Materials for this Project where sourced from this Shops<br>
 <a id="id_calculator" style="color: #dddddd; text-decoration: none;">Material Cost Calculator</a>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
-Download the [Calculator][calculator] html and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.
+Download the <a href="calculator.html">Calculator html</a> and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.<br>
+<img src="./calculator.png" border="1"></img>

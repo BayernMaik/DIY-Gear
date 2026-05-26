@@ -58,8 +58,8 @@
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
 </h3>
 Materials for this Project where sourced from this Shops<br>
-[IW-Tex][iwtex] (https://www.iw-tex.de/)<br>
-[Tacticaltrim][tacticaltrim] (https://www.tacticaltrim.de/)<br>
+<a href="https://www.iw-tex.de/">IW-Tex</a> (https://www.iw-tex.de/)<br>
+<a href="https://www.tacticaltrim.de/">Tacticaltrim</a> (https://www.tacticaltrim.de/)<br>
 
 | [Molle Befestigung][iwtexmolle] | [Cordura Stoff][iwtexcordura] |
 | :- | :- |
@@ -97,4 +97,4 @@ Materials for this Project where sourced from this Shops<br>
 <a id="id_calculator" style="color: #dddddd; text-decoration: none;">Material Cost Calculator</a>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
-Download the [Calculator][calculator] html and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.
+Download the <a href="calculator.html">Calculator html</a> and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.<br>
