@@ -66,7 +66,8 @@
 <a id="id_description"></a>Placard Tripple-Mag (High Cut)</a>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
 </h2>
-<img src="./Preview1.png" border="1"></img><br>
+<img src="./Preview1.png" border="1"></img><br>&#x26A0; Preview Image will be added soon
+
 This piece of Equipment is a modular Placard for use with Chestrigs and Platecarriers. It consits of a Backpanel and a Frontpanel.<br>
 The Backpanel has male Velcro on the back and female Velcro on the front with sewed in looped webbing on the sides and on top to attach Buckles*.<br>
 The Frontpanel is made of Fabric with additional Velcro to attach it on the Backpanel and to adjust for different Magazine Sizes.<br>
@@ -118,4 +119,4 @@ Materials for this Project where sourced from this Shops<br>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
 Download the <a href="calculator.html">Calculator html</a> and open it with your browser to calculate the Cost of Materials used for this Piece of Gear.<br>
-<img src="./calculator.png" border="1"></img>
+<img src="./calculator.png" href="calculator.html" border="1"></img><br>

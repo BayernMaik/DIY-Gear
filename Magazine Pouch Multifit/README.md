@@ -51,6 +51,7 @@
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none">&#x21B0;</a>
 </h2>
 <img src="./Preview1.png" border="1"></img><br>
+&#x26A0; Preview Image will be added soon
 
 <!-- Resources -->
 <h3>
