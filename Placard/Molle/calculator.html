@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" defer>
+            const units = ["mm", "cm"];
+            window.onload = windowOnLoad;
+            // Variables Panel
+            let frontpanel;
+            let velcromale150mm;
+            let velcrofemale150mm;
+            let velcrofemale20mm;
+            let webbing25mm;
+            let checkboxBuckles;
+            let bucklesleft;
+            let bucklestop;
+            let bucklesright;
+            // Variables Total
+            let totalCost;
+
+            function windowOnLoad()
+            {
+                console.log("windowOnLoad");
+                // Panel
+                frontpanel = document.getElementById("frontpanel");
+                frontpanel.addEventListener("change", calculateTotalPanel);
+                velcromale150mm = document.getElementById("velcromale150mm");
+                velcromale150mm.addEventListener("change", calculateTotalPanel);
+                velcrofemale150mm = document.getElementById("velcrofemale150mm");
+                velcrofemale150mm.addEventListener("change", calculateTotalPanel);
+                velcrofemale20mm = document.getElementById("velcrofemale20mm");
+                velcrofemale20mm.addEventListener("change", calculateTotalPanel);
+                webbing25mm = document.getElementById("webbing25mm");
+                webbing25mm.addEventListener("change", calculateTotalPanel);
+                checkboxBuckles = document.getElementById("checkboxBuckles");
+                checkboxBuckles.addEventListener("change", calculateTotalPanel);
+                bucklesleft = document.getElementById("bucklesleft");
+                bucklesleft.addEventListener("change", calculateTotalPanel);
+                bucklestop = document.getElementById("bucklestop");
+                bucklestop.addEventListener("change", calculateTotalPanel);
+                bucklesright = document.getElementById("bucklesright");
+                bucklesright.addEventListener("change", calculateTotalPanel);
+
+                // Total
+                totalCost = document.getElementById("totalCost");
+                
+                this.calculateTotalPanel();
+            }
+            function calculateTotalPanel(event)
+            {
+                // Debug
+                console.log("calculateTotalPanel");
+                // Frontpanel
+                let costFrontpanel = frontpanel.value;
+                // Velcro Male (150mm width)
+                let costVelcroMale150mm = costPerLength(
+                    "mm",   // Unit
+                    250,    // Length
+                    velcromale150mm.value
+                );
+                // Velcro Female (150mm width)
+                let costVelcroFemale150mm = costPerLength(
+                    "mm",   // Unit
+                    250,    // Length
+                    velcrofemale150mm.value
+                );
+                // Velcro Female (20mm width)
+                let costVelcroFemale20mm = costPerLength(
+                    "mm",   // Unit
+                    80 * 2, // Length
+                    velcrofemale20mm.value
+                )
+                // Webbing (25mm width)
+                let costWebbing25mm = costPerLength(
+                    "mm",   // Unit
+                    50 * 4, // Length
+                    webbing25mm.value
+                );
+                // Backpanel Buckles
+                let costPanelBuckles = 0;
+                if (checkboxBuckles.checked)
+                {
+                    costPanelBuckles += 2 * bucklesleft.value;
+                    costPanelBuckles += 2 * bucklestop.value;
+                    costPanelBuckles += 2 * bucklesright.value;
+                }
+                // Total
+                totalCost.textContent = ( 
+                    Number(costFrontpanel) + 
+                    Number(costVelcroMale150mm) +
+                    Number(costVelcroFemale150mm) +
+                    Number(costVelcroFemale20mm) +
+                    Number(costWebbing25mm) +
+                    Number(costPanelBuckles)
+                ).toFixed(2);
+            }
+            function costPerSquareCM(widthInCentimeter, heightInCentimeter, cost)
+            {
+                return cost / (widthInCentimeter * heightInCentimeter);
+            }
+            function costPerLength(unit, length, cost)
+            {
+                switch (unit)
+                {
+                    case "mm": return length / 1000 * cost; 
+                }
+                return 0;
+            }
+
+        </script>
+    </head>
+    <body>
+        <!-- Front Panel -->
+        <b>Front Panel Lasercut</b><br>
+        <input id="frontpanel" type="number" min="0" step="0.01" value="9.90"> €
+        <br>
+        <!-- Velcro Male 150mm -->
+        <b>Velcro Male (150mm)</b><br>
+        <input id="velcromale150mm" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <!-- Velcro Female 150mm -->
+        <b>Velcro Female (150mm)</b><br>
+        <input id="velcrofemale150mm" type="number" min="0" step="0.01" value="5.91"> €/meter
+        <br>
+        <!-- Velcro Female 20mm -->
+        <b>Velcro Female (20mm)</b><br>
+        <input id="velcrofemale20mm" type="number" min="0" step="0.01" value="1.03"> €/meter
+        <br>
+        <!-- Webbing 25mm -->
+        <b>Webbing (25mm)</b><br>
+        <input id="webbing25mm" type="number" min="0" step="0.01" value="2.59"> €/meter
+        <br>
+        <!-- Buckles -->
+        <label><input id="checkboxBuckles" type="checkbox" checked><b>Buckles</b></label><br>
+        <input id="bucklesleft" type="number" min="0" step="0.01" value="0.69"> €/piece (left)<br><!-- Left -->
+        <input id="bucklestop" type="number" min="0" step="0.01" value="0.69"> €/piece (top)<br><!-- Top -->
+        <input id="bucklesright" type="number" min="0" step="0.01" value="0.69"> €/piece (right)<br><!-- Right -->
+        <!-- Total -->
+        <b>Total: </b><a id="totalCost">0</a><a> €</a><br>
+        </div>
+    </body>
+</html>
