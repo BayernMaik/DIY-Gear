@@ -6,7 +6,7 @@
 This Project provides Guides and Templates to make your own Tactical Equipment.
 The premise is to create minimalistic, lightweight and modular pieces of Equipment made of durable and affordable Materials to cover essential needs for outdoor Sportsgames like Airsoft or Paintball.
 
-
+<!--
 <details id="id_directory" open>
 <summary>Directory</summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&bullet; Placard<br>
@@ -16,14 +16,21 @@ The premise is to create minimalistic, lightweight and modular pieces of Equipme
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bullet; Panel<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bullet; Pouch<br>
 </details>
+-->
 
-[Magazine Pouch - Placard - Multifit - Tripple][ref_magpouchplacardmultifittripple]
+<!-- Placard Front Panel Molle -->
+[asset_placard_mollepanel]: ./Placard/Molle/README.md
+## [Placard - Molle Panel][asset_placard_mollepanel]
+<img src="./Placard/Molle/preview1.jpg" width="512">
 
-[Magazine Pouch - Molle - Multifit Single][ref_magpouchmultifit]
+<!-- Placard Magazine Multifit Tripple -->
+## [Placard - Multifit Tripple Magazine][ref_magpouchplacardmultifittripple]
 
+<!-- Magazine Pouch Multifit Single -->
+## [Pouch - Multifit Single Magazine ][ref_magpouchmultifit]
 
-<!-- Changelog -->
+<!-- Changelog 
 <details id="id_changelog" close>
 <summary>Changelog</summary>
-
 </details>
+-->

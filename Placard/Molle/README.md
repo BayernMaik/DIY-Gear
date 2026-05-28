@@ -80,12 +80,11 @@ Materials for this Project where sourced from this Shops<br>
 <a href="https://www.iw-tex.de/">IW-Tex</a> (https://www.iw-tex.de/)<br>
 <a href="https://www.tacticaltrim.de/">Tacticaltrim</a> (https://www.tacticaltrim.de/)<br>
 
----
 | [Front Panel][iwtex_frontpanel] | [Velcro Male 150mm][velcromale150mm] | [Velcro Female 150mm][velcrofemale150mm] | [Velcro Female 20mm][velcrofemale20mm] | [Webbing 25mm][webbing25mm] | [Buckles][buckles] |
 | :- | :- | :- | :- | :- | :- |
 | <a href="https://www.iw-tex.de/produkt/front-panel-steingrauoliv-gen-2/"><img src="https://www.iw-tex.de/wp-content/uploads/2025/10/FrontPanel_Gen2_Steingrauoliv-720x720.jpg" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49020/lg/velcro-haken-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Flausch-RAL7013-150mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/48652/lg/velcro-flausch-ral7013-150mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/VELCRO-Haken-RAL7013-20mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/49028/lg/velcro-haken-ral7013-20mm-meterware.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/Nylon-Gurtband-Ranger-Green-Solution-Dyed-25-mm-Meterware"><img src="https://www.tacticaltrim.de/media/image/product/67190/lg/nylon-gurtband-ranger-green-solution-dyed-25-mm-meterware~2.webp" width="256"></a> | <a href="https://www.tacticaltrim.de/WB25-Stecker-Click-In-2M-Warrior-Serie-25-mm-RAL7013"><img src="https://www.tacticaltrim.de/media/image/product/64886/lg/wb25-stecker-click-in-2m-warrior-serie-25-mm-ral7013.webp" width="256"></a> |
 | Molle Panel on Frontside with top Webbing | Used for the Backside Velcro | Used for the Backside Cover | Used for Molle Panel top Webbing | Used for attaching Buckles on Sides | Used to attach Plackard | 
----
+
 *Sewing Thread is not listed
 
 <!-- Templates -->
@@ -97,11 +96,6 @@ Materials for this Project where sourced from this Shops<br>
 <summary>Page 1</summary>
 <img src="./Page1.svg" border="1"></img>
 </details>
-</summary>
-<details open>
-<summary>Page 2</summary>
-<img src="./Page2.svg" border="1"></img>
-</details>
 
 <!-- Variations -->
 <h3>
@@ -109,6 +103,7 @@ Materials for this Project where sourced from this Shops<br>
 <a href="#id_navigation" style="color: #dddddd; text-decoration: none;">&#x21B0;</a>
 </h3>
 &bullet; The Webbing on the Sides may be layouted differently to be used with other Quickrelease Systems (ROC, Tubes...).<br>
+&bullet; The Webbing on top of the Molle Panel could host Female Velcro on the inside as described and additionally Male Velcro on the outside for extra stability.<br>
 
 <!-- Calculator -->
 <h3>
